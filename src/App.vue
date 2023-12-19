@@ -13,6 +13,10 @@ import HelloWorld from './components/HelloWorld.vue'
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/mobile-apps">
+          <font-awesome-icon icon="fa-solid fa-mobile" />
+          Mobile App Development
+        </RouterLink>
         <RouterLink to="/contact">
           <font-awesome-icon icon="fa-solid fa-address-book" />
           Contact
