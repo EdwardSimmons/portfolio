@@ -3,7 +3,7 @@
     <i>
       <slot name="icon"></slot>
     </i>
-    <div class="details bg-blue-900">
+    <div class="details bg-cv-light-400">
       <h3>
         <slot name="heading"></slot>
       </h3>
