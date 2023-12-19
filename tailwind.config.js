@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
 export default {
   content: ['./public/**/*.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   presets: [],
@@ -289,6 +290,13 @@ export default {
       xl: ['0 20px 13px rgb(0 0 0 / 0.03)', '0 8px 5px rgb(0 0 0 / 0.08)'],
       '2xl': '0 25px 25px rgb(0 0 0 / 0.15)',
       none: '0 0 #0000'
+    },
+    extend: {
+      theme: {
+        fontFamily: {
+          sans: ['"Roboto"', ...defaultTheme.fontFamily.sans]
+        }
+      }
     },
     fill: ({ theme }) => ({
       none: 'none',
