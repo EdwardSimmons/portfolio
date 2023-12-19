@@ -5,7 +5,7 @@ import WelcomeItem from './WelcomeItem.vue'
 <template>
   <WelcomeItem>
     <template #icon>
-      <font-awesome-icon icon="fa-solid fa-user-secret" />
+      <font-awesome-icon icon="fa-solid fa-user" />
     </template>
     <template #heading>Documentation</template>
 
@@ -16,7 +16,7 @@ import WelcomeItem from './WelcomeItem.vue'
 
   <WelcomeItem>
     <template #icon>
-      <font-awesome-icon icon="fa-solid fa-user-secret" />
+      <font-awesome-icon icon="fa-solid fa-user" />
     </template>
     <template #heading>Tooling</template>
 
@@ -38,7 +38,7 @@ import WelcomeItem from './WelcomeItem.vue'
 
   <WelcomeItem>
     <template #icon>
-      <font-awesome-icon icon="fa-solid fa-user-secret" />
+      <font-awesome-icon icon="fa-solid fa-user" />
     </template>
     <template #heading>Ecosystem</template>
 
@@ -54,7 +54,7 @@ import WelcomeItem from './WelcomeItem.vue'
 
   <WelcomeItem>
     <template #icon>
-      <font-awesome-icon icon="fa-solid fa-user-secret" />
+      <font-awesome-icon icon="fa-solid fa-user" />
     </template>
     <template #heading>Community</template>
 
@@ -72,7 +72,7 @@ import WelcomeItem from './WelcomeItem.vue'
 
   <WelcomeItem>
     <template #icon>
-      <font-awesome-icon icon="fa-solid fa-user-secret" />
+      <font-awesome-icon icon="fa-solid fa-user" />
     </template>
     <template #heading>Support Vue</template>
 

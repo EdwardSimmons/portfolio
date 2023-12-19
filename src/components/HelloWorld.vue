@@ -32,7 +32,7 @@ h3 {
   text-align: center;
 }
 
-@media (min-width: 1024px) {
+@media (orientation: landscape) {
   .greetings h1,
   .greetings h3 {
     text-align: left;
