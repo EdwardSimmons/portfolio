@@ -73,30 +73,32 @@ const apps: MobileApp[] = [
         </template>
         <template #heading>{{ app.name }}</template>
         {{ app.description }}
-        <template #links v-if="app?.url">
-          <div v-if="app?.url?.android" class="app-store-android">
-            <a :href="app.url.android" class="app-store-link"
-              ><img
-                alt="Get it on Google Play"
-                src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-            /></a>
-          </div>
-          <div v-if="app?.url?.ios" class="app-store-ios">
-            <a
-              :href="app.url.ios"
-              style="
-                display: inline-block;
-                overflow: hidden;
-                border-radius: 13px;
-                width: 250px;
-                height: 83px;
-              "
-              class="app-store-link"
-              ><img
-                src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1559347200"
-                alt="Download on the App Store"
-                style="border-radius: 13px; width: 250px; height: 83px"
-            /></a>
+        <template #links v-if="app.url">
+          <div class="app-store-links-container">
+            <div v-if="app.url.android" class="app-store-android">
+              <a :href="app.url.android" class="app-store-link"
+                ><img
+                  alt="Get it on Google Play"
+                  src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+              /></a>
+            </div>
+            <div v-if="app.url.ios" class="app-store-ios">
+              <a
+                :href="app.url.ios"
+                style="
+                  display: inline-block;
+                  overflow: hidden;
+                  border-radius: 13px;
+                  width: 250px;
+                  height: 83px;
+                "
+                class="app-store-link"
+                ><img
+                  src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1559347200"
+                  alt="Download on the App Store"
+                  style="border-radius: 13px; width: 250px; height: 83px"
+              /></a>
+            </div>
           </div>
         </template>
       </mobile-app-info>
@@ -110,12 +112,18 @@ const apps: MobileApp[] = [
 </template>
 
 <style scoped>
+.app-store-links-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 .app-store-android {
   transform: scale(50%);
 }
 
 .app-store-ios {
-  padding: 1rem;
+  transform: scale(50%);
 }
 
 .app-store-link {
