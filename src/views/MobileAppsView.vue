@@ -172,7 +172,7 @@ const onCarouselInit = () => {
 }
 
 .app-store-link:hover {
-  background-color: red;
+  background-color: white;
 }
 
 .carousel__prev,
