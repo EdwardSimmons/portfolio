@@ -98,29 +98,21 @@ const onCarouselInit = () => {
           <template #heading>{{ app.name }}</template>
           {{ app.description }}
           <template #links v-if="app.url">
-            <div class="app-store-links-container">
+            <div class="app-store-links-container mt-4">
+              <div v-if="app.url.ios" class="app-store-ios">
+                <a :href="app.url.ios" class="app-store-link"
+                  ><img
+                    src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1559347200"
+                    alt="Download on the App Store"
+                    class="apple-img"
+                /></a>
+              </div>
               <div v-if="app.url.android" class="app-store-android">
                 <a :href="app.url.android" class="app-store-link"
                   ><img
                     alt="Get it on Google Play"
                     src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-                /></a>
-              </div>
-              <div v-if="app.url.ios" class="app-store-ios">
-                <a
-                  :href="app.url.ios"
-                  style="
-                    display: inline-block;
-                    overflow: hidden;
-                    border-radius: 13px;
-                    width: 250px;
-                    height: 83px;
-                  "
-                  class="app-store-link"
-                  ><img
-                    src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1559347200"
-                    alt="Download on the App Store"
-                    style="border-radius: 13px; width: 250px; height: 83px"
+                    class="google-img"
                 /></a>
               </div>
             </div>
@@ -139,20 +131,48 @@ const onCarouselInit = () => {
 <style>
 .app-store-links-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
+@media (orientation: landscape) {
+  .app-store-links-container {
+    flex-direction: row;
+  }
+
+  .app-store-android,
+  .app-store-ios {
+    width: 50%;
+  }
+}
+
 .app-store-android {
-  transform: scale(50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .app-store-ios {
-  transform: scale(50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .app-store-link {
   background-color: #ffffff;
+}
+
+.apple-img {
+  height: 40px;
+}
+
+.google-img {
+  height: 58px;
+}
+
+.app-store-link:hover {
+  background-color: red;
 }
 
 .carousel__prev,
