@@ -15,7 +15,10 @@ import {
   faEnvelope,
   faScrewdriverWrench,
   faAward,
-  faMobile
+  faMobile,
+  faCarSide,
+  faChevronRight,
+  faChevronLeft
 } from '@fortawesome/free-solid-svg-icons'
 import { faSmile } from '@fortawesome/free-regular-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -32,7 +35,10 @@ library.add(
   faEnvelope,
   faScrewdriverWrench,
   faAward,
-  faMobile
+  faMobile,
+  faCarSide,
+  faChevronRight,
+  faChevronLeft
 )
 
 const app = createApp(App)

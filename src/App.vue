@@ -17,9 +17,13 @@ import HelloWorld from './components/HelloWorld.vue'
           <font-awesome-icon icon="fa-solid fa-mobile" />
           Mobile App Development
         </RouterLink>
+        <RouterLink to="/surfacing">
+          <font-awesome-icon icon="fa-solid fa-car-side" />
+          Surface Design Engineering
+        </RouterLink>
         <RouterLink to="/contact">
           <font-awesome-icon icon="fa-solid fa-address-book" />
-          Contact
+          Contact Me
         </RouterLink>
       </nav>
     </div>
