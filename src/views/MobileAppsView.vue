@@ -77,7 +77,7 @@ const onCarouselInit = () => {
 </script>
 
 <template>
-  <div class="relative">
+  <div class="mobile-container relative">
     <pixel-spinner
       :animation-duration="2000"
       :size="70"
@@ -100,7 +100,7 @@ const onCarouselInit = () => {
           <template #links v-if="app.url">
             <div class="app-store-links-container mt-4">
               <div v-if="app.url.ios" class="app-store-ios">
-                <a :href="app.url.ios" class="app-store-link"
+                <a :href="app.url.ios" class="app-store-link" target="_blank"
                   ><img
                     src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1559347200"
                     alt="Download on the App Store"
@@ -108,7 +108,7 @@ const onCarouselInit = () => {
                 /></a>
               </div>
               <div v-if="app.url.android" class="app-store-android">
-                <a :href="app.url.android" class="app-store-link"
+                <a :href="app.url.android" class="app-store-link" target="_blank"
                   ><img
                     alt="Get it on Google Play"
                     src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
@@ -137,6 +137,11 @@ const onCarouselInit = () => {
 }
 
 @media (orientation: landscape) {
+  .mobile-container {
+    max-width: 50vw;
+    margin: auto;
+  }
+
   .app-store-links-container {
     flex-direction: row;
   }
@@ -164,7 +169,7 @@ const onCarouselInit = () => {
 }
 
 .apple-img {
-  height: 40px;
+  height: 44px;
 }
 
 .google-img {

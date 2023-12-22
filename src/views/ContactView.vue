@@ -28,8 +28,5 @@ import ContactItem from '@/components/ContactItem.vue'
 }
 
 @media (orientation: landscape) {
-  .contact {
-    min-height: 100vh;
-  }
 }
 </style>
