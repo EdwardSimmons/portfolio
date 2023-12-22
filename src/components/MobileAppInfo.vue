@@ -32,6 +32,7 @@
 .details {
   display: flex;
   flex-direction: column;
+  text-align: justify;
 }
 
 i {
@@ -41,5 +42,8 @@ i {
 }
 
 @media (orientation: landscape) {
+  .details {
+    text-align: center;
+  }
 }
 </style>

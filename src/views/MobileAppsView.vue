@@ -136,10 +136,14 @@ const onCarouselInit = () => {
   justify-content: center;
 }
 
+.mobile-container {
+  max-width: calc(100vw - 4rem - 65px);
+  margin: auto;
+}
+
 @media (orientation: landscape) {
   .mobile-container {
     max-width: 50vw;
-    margin: auto;
   }
 
   .app-store-links-container {
