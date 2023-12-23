@@ -4,7 +4,7 @@ import PDFViewer from '@/components/PDFViewer.vue'
 
 <template>
   <div class="surfacing-ccntainer">
-    <PDFViewer path="/surfacing_portfolio.pdf" />
+    <PDFViewer path="/portfolio/surfacing_portfolio.pdf" />
   </div>
 </template>
 

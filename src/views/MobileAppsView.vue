@@ -19,7 +19,7 @@ interface MobileApp {
 const apps: MobileApp[] = [
   {
     name: 'Opnametool IMG',
-    icon: 'src/assets/MobileAppIcons/opnametool.webp',
+    icon: '/portfolio/MobileAppIcons/opnametool.webp',
     description:
       "This iOS app was a bespoke project for the Instituut Mijnbouwschade Groningen (IMG), a department of the Dutch government. It is used by their team of experts to assess the damage caused to people's homes by earthquakes, and to calculate any compensation that they are owed. Over €1b has been awarded as a result.",
     url: {
@@ -28,7 +28,7 @@ const apps: MobileApp[] = [
   },
   {
     name: 'Atabase Schade',
-    icon: 'src/assets/MobileAppIcons/atabase_schade.webp',
+    icon: '/portfolio/MobileAppIcons/atabase_schade.webp',
     description:
       'This iOS app was the commercial successor to Opnametool IMG, designed by Atabix to be used by any client wishing to carry out offline damage assessments of property.',
     url: {
@@ -37,7 +37,7 @@ const apps: MobileApp[] = [
   },
   {
     name: 'Find My ULD',
-    icon: 'src/assets/MobileAppIcons/fmu.webp',
+    icon: '/portfolio/MobileAppIcons/fmu.webp',
     description:
       'This app, designed simultaneously for Android and iOS, allowed ACL Airshop customers to track and manage ULDs - the standardised containers used in the air freight industry.',
     url: {
@@ -48,7 +48,7 @@ const apps: MobileApp[] = [
   },
   {
     name: 'WorkNed',
-    icon: 'src/assets/MobileAppIcons/workned.webp',
+    icon: '/portfolio/MobileAppIcons/workned.webp',
     description:
       'Available for both Android and iOS, this app allowed part-time employers and employees of the Netherlands to build a network of connections, manage their contracts, apply for jobs, and submit timesheets. ',
     url: {
@@ -59,7 +59,7 @@ const apps: MobileApp[] = [
   },
   {
     name: 'Memoria',
-    icon: 'src/assets/MobileAppIcons/memoria.png',
+    icon: '/portfolio/MobileAppIcons/memoria.png',
     description:
       'Developed solely for iOS, this app was designed for the Van der Spek funeral company, and is used by their employees to manage their appointments, track hours worked, and view details of the deceased. This was my first project at Atabix.'
   }
