@@ -118,6 +118,7 @@ const onClickDownload = () => {
         icon="fa-solid fa-file-download"
         class="pdf-arrow text-xl absolute bottom-0 right-0 text-cv-dark-400"
         @click="onClickDownload"
+        title="Download this pdf"
       />
     </div>
   </div>

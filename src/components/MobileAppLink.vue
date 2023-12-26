@@ -59,6 +59,6 @@ const classes = computedEager(() => {
 }
 
 .app-link-icon {
-  margin: 0 0 0 auto;
+  margin: 0 0.5rem 0 auto;
 }
 </style>

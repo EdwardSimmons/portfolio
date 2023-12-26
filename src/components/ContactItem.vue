@@ -18,5 +18,6 @@ const isLast = props.last || false
 .item {
   display: flex;
   align-items: center;
+  text-decoration: underline;
 }
 </style>
