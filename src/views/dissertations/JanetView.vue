@@ -4,7 +4,7 @@
   <div class="flex flex-col">
     <h3 class="text-cv-dark-400">Physics: Janet and Mark Preston Prize</h3>
     <content-card>
-      <img class="award" src="/portfolio/bsc_award.jpeg" />
+      <img class="award" src="@/assets/bsc_award.jpeg" alt="certificate-image" />
     </content-card>
   </div>
 </template>
