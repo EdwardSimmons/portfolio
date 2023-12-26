@@ -35,6 +35,31 @@ const router = createRouter({
       component: () => import('../views/MobileAppsView.vue')
     },
     {
+      path: '/mobile-apps/opnametool-img',
+      name: 'mobile-apps-opnametool-img',
+      component: () => import('../views/apps/OpnametoolView.vue')
+    },
+    {
+      path: '/mobile-apps/atabase-schade',
+      name: 'mobile-apps-atabase-schade',
+      component: () => import('../views/apps/AtabaseSchadeView.vue')
+    },
+    {
+      path: '/mobile-apps/find-my-uld',
+      name: 'mobile-apps-find-my-uld',
+      component: () => import('../views/apps/FindMyUldView.vue')
+    },
+    {
+      path: '/mobile-apps/workned',
+      name: 'mobile-apps-workned',
+      component: () => import('../views/apps/WorkNedView.vue')
+    },
+    {
+      path: '/mobile-apps/memoria',
+      name: 'mobile-apps-memoria',
+      component: () => import('../views/apps/MemoriaView.vue')
+    },
+    {
       path: '/surfacing',
       name: 'surfacing',
       component: () => import('../views/SurfacingView.vue')

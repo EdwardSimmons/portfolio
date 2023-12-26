@@ -1,49 +1,66 @@
-<template>
-  <div class="item p-8">
-    <div class="icon-and-name mb-2">
-      <i>
-        <slot name="icon"></slot>
-      </i>
-      <h3 class="text-xl ml-2">
-        <slot name="heading"></slot>
-      </h3>
-    </div>
+<script setup lang="ts">
+import MobileAppIcon from '@/components/MobileAppIcon.vue'
 
-    <div class="details p-4">
-      <slot></slot>
-      <slot name="links"></slot>
-    </div>
+export interface MobileApp {
+  icon: string
+  name: string
+  description: string
+  url?: {
+    ios?: string
+    android?: string
+  }
+}
+
+const props = defineProps<{
+  app: MobileApp
+}>()
+</script>
+
+<template>
+  <div class="flex flex-col">
+    <mobile-app-icon :img="props.app.icon" class="mb-4" />
+    <content-card>
+      <h3 class="text-cv-dark-400 text-2xl">{{ props.app.name }}</h3>
+      {{ props.app.description }}
+
+      <div v-if="props.app.url" class="links-contianer mt-4">
+        <a
+          v-if="props.app.url.ios"
+          :href="props.app.url.ios"
+          class="inline-block h-16 rounded-lg"
+          target="_blank"
+          ><img
+            src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1559347200"
+            alt="Download on the App Store"
+            class="p-2.5 h-16"
+        /></a>
+
+        <a
+          v-if="props.app.url.android"
+          :href="props.app.url.android"
+          class="inline-block rounded-lg"
+          target="_blank"
+          ><img
+            alt="Get it on Google Play"
+            src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+            class="h-16"
+        /></a>
+      </div>
+    </content-card>
   </div>
 </template>
 
 <style scoped>
-.item {
+.links-contianer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
-
-.icon-and-name {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.details {
-  display: flex;
-  flex-direction: column;
-  text-align: justify;
-}
-
-i {
-  display: flex;
-  place-items: center;
-  place-content: center;
 }
 
 @media (orientation: landscape) {
-  .details {
-    text-align: center;
+  .links-contianer {
+    flex-direction: row;
   }
 }
 </style>
