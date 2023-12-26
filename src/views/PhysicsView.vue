@@ -16,11 +16,15 @@ import LinkItem from '@/components/LinkItem.vue'
       <LinkItem router href="/physics/bsc-dissertation">
         Simulations of Heavy-ion Fusion using the TDHF Code "Sky3D"
       </LinkItem>
+      <h4>Awards:</h4>
+      <LinkItem router href="/physics/janet-and-mark-preston-prize">
+        Janet & Mark Preston Prize for Best Physics Final Year Project
+      </LinkItem>
       <h4>Publications:</h4>
       <LinkItem
         href="https://www.epj-conferences.org/articles/epjconf/abs/2015/05/epjconf_fusion2015_00058/epjconf_fusion2015_00058.html"
       >
-        Role of the Skyrme tensor force in heavy-ion fusion
+        Role of the Skyrme Tensor Force in Heavy-ion Fusion
       </LinkItem>
     </content-card>
   </div>

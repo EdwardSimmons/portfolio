@@ -20,6 +20,11 @@ const router = createRouter({
       component: () => import('../views/dissertations/SkyrmeView.vue')
     },
     {
+      path: '/physics/janet-and-mark-preston-prize',
+      name: 'janet-and-mark-preston-prize',
+      component: () => import('../views/dissertations/JanetView.vue')
+    },
+    {
       path: '/physics/msc-dissertation',
       name: 'physics-msc-dissertation',
       component: () => import('../views/dissertations/GyrofluidView.vue')
