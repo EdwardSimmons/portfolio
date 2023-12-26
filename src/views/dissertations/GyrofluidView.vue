@@ -6,7 +6,11 @@ import PDFViewer from '@/components/PDFViewer.vue'
   <div class="flex flex-col">
     <h3 class="text-cv-dark-400">Physics: MSc Dissertation</h3>
     <content-card>
-      <PDFViewer portrait path="/portfolio/msc_dissertation.pdf" />
+      <PDFViewer
+        portrait
+        path="/portfolio/msc_dissertation.pdf"
+        fileName="Edward_Simmons-MSc_Dissertation.pdf"
+      />
     </content-card>
   </div>
 </template>

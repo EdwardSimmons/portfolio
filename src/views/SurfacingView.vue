@@ -5,7 +5,10 @@ import PDFViewer from '@/components/PDFViewer.vue'
 <template>
   <content-card>
     <div class="surfacing-container">
-      <PDFViewer path="/portfolio/surfacing_portfolio.pdf" />
+      <PDFViewer
+        path="/portfolio/surfacing_portfolio.pdf"
+        fileName="Edward_Simmons-Surfacing_Portfolio.pdf"
+      />
     </div>
   </content-card>
 </template>

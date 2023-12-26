@@ -16,7 +16,8 @@ import {
   faHome,
   faCircleChevronRight,
   faCircleChevronLeft,
-  faAtom
+  faAtom,
+  faFileDownload
 } from '@fortawesome/free-solid-svg-icons'
 import { faSmile } from '@fortawesome/free-regular-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -40,7 +41,8 @@ library.add(
   faHome,
   faCircleChevronRight,
   faCircleChevronLeft,
-  faAtom
+  faAtom,
+  faFileDownload
 )
 
 export default FontAwesomeIcon

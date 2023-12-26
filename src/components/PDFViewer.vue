@@ -39,6 +39,7 @@ const convertRemToPixels = (rem: number) =>
 
 const props = defineProps<{
   path: string
+  fileName: string
   portrait?: boolean
 }>()
 
@@ -68,6 +69,19 @@ const onClickControl = (ctrl: 'prev' | 'next' | 'zoom-in' | 'zoom-out') => {
     state.isLoading = true
     return
   }
+}
+
+const onClickDownload = () => {
+  // create element <a> for download PDF
+  const link = document.createElement('a')
+  link.href = props.path
+  link.target = '_blank'
+  link.download = props.fileName
+
+  // Simulate a click on the element <a>
+  document.body.appendChild(link)
+  link.click()
+  document.body.removeChild(link)
 }
 </script>
 
@@ -100,6 +114,11 @@ const onClickControl = (ctrl: 'prev' | 'next' | 'zoom-in' | 'zoom-out') => {
           @click="onClickControl('next')"
         />
       </div>
+      <font-awesome-icon
+        icon="fa-solid fa-file-download"
+        class="pdf-arrow text-xl absolute bottom-0 right-0 text-cv-dark-400"
+        @click="onClickDownload"
+      />
     </div>
   </div>
 </template>
@@ -138,6 +157,6 @@ const onClickControl = (ctrl: 'prev' | 'next' | 'zoom-in' | 'zoom-out') => {
 }
 
 .pdf-arrow:hover {
-  color: theme('colors.cv-dark.400');
+  opacity: 0.5;
 }
 </style>
