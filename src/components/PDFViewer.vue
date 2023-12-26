@@ -39,9 +39,11 @@ const convertRemToPixels = (rem: number) =>
 
 const props = defineProps<{
   path: string
+  portrait?: boolean
 }>()
 
 const { pdf, pages } = usePDF(props.path)
+const isPortrait = props.portrait || false
 
 const state = reactive({
   isLoading: true,
@@ -70,7 +72,7 @@ const onClickControl = (ctrl: 'prev' | 'next' | 'zoom-in' | 'zoom-out') => {
 </script>
 
 <template>
-  <div class="pdf-viewer relative">
+  <div class="relative">
     <pixel-spinner
       :animation-duration="2000"
       :size="70"
@@ -78,7 +80,13 @@ const onClickControl = (ctrl: 'prev' | 'next' | 'zoom-in' | 'zoom-out') => {
       :class="state.isLoading ? 'loader' : 'loader finished'"
     />
     <div :class="state.isLoading ? 'pdf-container pdf-loading' : 'pdf-container pdf-loaded'">
-      <VuePDF :pdf="pdf" :page="state.page" @loaded="onLoaded" :width="pdfWidth" />
+      <VuePDF
+        :pdf="pdf"
+        :page="state.page"
+        @loaded="onLoaded"
+        :width="pdfWidth"
+        :fit-parent="isPortrait"
+      />
       <div class="mt-4">
         <font-awesome-icon
           icon="fa-solid fa-chevron-left"

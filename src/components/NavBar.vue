@@ -34,6 +34,16 @@ const menu = [
     }
   },
   {
+    href: '/physics',
+    title: 'Physics',
+    icon: {
+      element: 'font-awesome-icon',
+      attributes: {
+        icon: 'fa-solid fa-atom'
+      }
+    }
+  },
+  {
     href: '/mobile-apps',
     title: 'Mobile App Development',
     icon: {

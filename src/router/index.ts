@@ -10,6 +10,21 @@ const router = createRouter({
       component: HomeView
     },
     {
+      path: '/physics',
+      name: 'physics',
+      component: () => import('../views/PhysicsView.vue')
+    },
+    {
+      path: '/physics/bsc-dissertation',
+      name: 'physics-bsc-dissertation',
+      component: () => import('../views/dissertations/SkyrmeView.vue')
+    },
+    {
+      path: '/physics/msc-dissertation',
+      name: 'physics-msc-dissertation',
+      component: () => import('../views/dissertations/GyrofluidView.vue')
+    },
+    {
       path: '/mobile-apps',
       name: 'mobile-apps',
       component: () => import('../views/MobileAppsView.vue')

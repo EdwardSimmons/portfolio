@@ -4,14 +4,14 @@ import PDFViewer from '@/components/PDFViewer.vue'
 
 <template>
   <content-card>
-    <div class="surfacing-ccntainer">
+    <div class="surfacing-container">
       <PDFViewer path="/portfolio/surfacing_portfolio.pdf" />
     </div>
   </content-card>
 </template>
 
 <style scoped>
-.surfacing-ccntainer {
+.surfacing-container {
   display: flex;
   align-items: center;
   justify-content: center;

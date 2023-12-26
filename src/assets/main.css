@@ -13,8 +13,22 @@
   justify-content: center;
 }
 
+h2 {
+  color: theme('colors.cv-dark.400');
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+h4 {
+  text-decoration: underline;
+}
+
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+    background-color: theme('colors.cv-light.200');
   }
 }
