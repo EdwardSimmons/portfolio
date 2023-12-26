@@ -3,9 +3,11 @@ import PDFViewer from '@/components/PDFViewer.vue'
 </script>
 
 <template>
-  <div class="surfacing-ccntainer">
-    <PDFViewer path="/portfolio/surfacing_portfolio.pdf" />
-  </div>
+  <content-card>
+    <div class="surfacing-ccntainer">
+      <PDFViewer path="/portfolio/surfacing_portfolio.pdf" />
+    </div>
+  </content-card>
 </template>
 
 <style scoped>

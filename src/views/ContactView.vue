@@ -1,9 +1,11 @@
 <script setup lang="ts">
+import AvatarCircle from '@/components/AvatarCircle.vue'
 import ContactItem from '@/components/ContactItem.vue'
 </script>
 
 <template>
-  <div class="contact">
+  <content-card>
+    <AvatarCircle class="mb-4" />
     <ContactItem :icon="`fa-solid fa-phone`">
       <a href="tel:+447552883317">+44 7552 88 33 17</a>
     </ContactItem>
@@ -13,20 +15,8 @@ import ContactItem from '@/components/ContactItem.vue'
     <ContactItem :icon="`fa-brands fa-linkedin`">
       <a href="https://www.linkedin.com/in/edward-simmons/" target="_blank">LinkedIn Profile</a>
     </ContactItem>
-    <ContactItem :icon="`fa-brands fa-github`">
+    <ContactItem :icon="`fa-brands fa-github`" last>
       <a href="https://github.com/EdwardSimmons" target="_blank">GitHub Profile</a>
     </ContactItem>
-  </div>
+  </content-card>
 </template>
-
-<style>
-.contact {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-@media (orientation: landscape) {
-}
-</style>

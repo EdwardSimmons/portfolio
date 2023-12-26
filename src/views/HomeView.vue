@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import AvatarCircle from '@/components/AvatarCircle.vue'
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <content-card>
+    <avatar-circle />
+  </content-card>
 </template>
