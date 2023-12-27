@@ -14,8 +14,7 @@ const isLast = props.last || false
 const classes = computedEager(() => {
   return {
     link: true,
-    'my-2': true,
-    'p-2': true,
+    'my-4': true,
     'w-full': true,
     'link-first': isFirst,
     'link-last': isLast
@@ -27,9 +26,9 @@ const classes = computedEager(() => {
   <a v-if="!!props.href" :href="props.href" target="_blank">
     <div :class="classes">
       <slot name="icon"></slot>
-      <div class="flex justify-between items-center grow">
+      <div class="flex justify-between items-center grow py-2 pl-2 rounded-md link-hover">
         <slot name="title"></slot>
-        <font-awesome-icon icon="fa-solid fa-chevron-right" class="text-cv-dark-400 ml-2" />
+        <font-awesome-icon icon="fa-solid fa-chevron-right" class="text-cv-dark-400 mx-2" />
       </div>
     </div>
   </a>
@@ -37,7 +36,7 @@ const classes = computedEager(() => {
   <router-link v-if="!!props.route" :to="props.route">
     <div :class="classes">
       <slot name="icon"></slot>
-      <div class="flex justify-between items-center grow">
+      <div class="flex justify-between items-center grow py-2 pl-2 rounded-md link-hover">
         <slot name="title"></slot>
         <font-awesome-icon icon="fa-solid fa-chevron-right" class="text-cv-dark-400 mx-2" />
       </div>
@@ -53,7 +52,7 @@ const classes = computedEager(() => {
   border-radius: 8px;
 }
 
-.link:hover {
+.link-hover:hover {
   background-color: theme('colors.cv-light.200');
   opacity: 0.8;
 }
