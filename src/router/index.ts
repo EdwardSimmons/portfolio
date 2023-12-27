@@ -30,6 +30,11 @@ const router = createRouter({
       component: () => import('../views/dissertations/GyrofluidView.vue')
     },
     {
+      path: '/physics/msc-poster',
+      name: 'physics-msc-poster',
+      component: () => import('../views/dissertations/PosterView.vue')
+    },
+    {
       path: '/mobile-apps',
       name: 'mobile-apps',
       component: () => import('../views/MobileAppsView.vue')

@@ -11,6 +11,7 @@ import LinkItem from '@/components/LinkItem.vue'
       <LinkItem router href="/physics/msc-dissertation">
         Testing a New Theory for Small Plasma Eruptions in Tokamaks Using Gyrofluid Simulations
       </LinkItem>
+      <LinkItem router href="/physics/msc-poster"> Project Poster </LinkItem>
       <h3>BSc Physics with Nuclear Astrophysics</h3>
       <h4>Dissertation:</h4>
       <LinkItem router href="/physics/bsc-dissertation">
