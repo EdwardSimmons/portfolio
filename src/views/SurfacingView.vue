@@ -4,6 +4,7 @@ import PDFViewer from '@/components/PDFViewer.vue'
 
 <template>
   <content-card>
+    <template #title> <h2>Surface Design Engineering</h2> </template>
     <div class="surfacing-container">
       <PDFViewer
         path="/portfolio/surfacing_portfolio.pdf"

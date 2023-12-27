@@ -31,18 +31,18 @@ const apps: AppLink[] = [
 </script>
 
 <template>
-  <div class="flex flex-col">
-    <h2>Mobile App Development</h2>
-    <content-card>
-      <div class="app-links">
-        <MobileAppLink
-          v-for="(app, i) in apps"
-          :link="app"
-          :key="i"
-          :isFirst="i === 0"
-          :isLast="i === apps.length - 1"
-        />
-      </div>
-    </content-card>
-  </div>
+  <content-card>
+    <template #title>
+      <h2>Mobile App Development</h2>
+    </template>
+    <div class="app-links">
+      <MobileAppLink
+        v-for="(app, i) in apps"
+        :link="app"
+        :key="i"
+        :isFirst="i === 0"
+        :isLast="i === apps.length - 1"
+      />
+    </div>
+  </content-card>
 </template>
