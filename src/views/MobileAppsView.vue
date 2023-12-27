@@ -1,5 +1,12 @@
 <script setup lang="ts">
-import MobileAppLink, { type AppLink } from '@/components/MobileAppLink.vue'
+import MobileAppIcon from '@/components/MobileAppIcon.vue'
+import LinkItem from '@/components/LinkItem.vue'
+
+interface AppLink {
+  icon: string
+  name: string
+  route: string
+}
 
 const apps: AppLink[] = [
   {
@@ -36,13 +43,20 @@ const apps: AppLink[] = [
       <h2>Mobile App Development</h2>
     </template>
     <div class="app-links">
-      <MobileAppLink
+      <link-item
         v-for="(app, i) in apps"
-        :link="app"
+        :route="app.route"
         :key="i"
-        :isFirst="i === 0"
-        :isLast="i === apps.length - 1"
-      />
+        :first="i === 0"
+        :last="i === apps.length - 1"
+      >
+        <template #icon>
+          <mobile-app-icon :img="app.icon" class="mr-4" />
+        </template>
+        <template #title>
+          <h3>{{ app.name }}</h3>
+        </template>
+      </link-item>
     </div>
   </content-card>
 </template>
