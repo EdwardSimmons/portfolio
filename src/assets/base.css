@@ -8,12 +8,23 @@
 
 body {
   min-height: 100vh;
+  min-height: -webkit-fill-available;
   transition:
     color 0.5s,
     background-color 0.5s;
   line-height: 1.6;
-  font-size: 16px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  height: -webkit-fill-available;
+  font-size: 12px;
+}
+
+@media (orientation: landscape) {
+  html {
+    font-size: 16px;
+  }
 }
