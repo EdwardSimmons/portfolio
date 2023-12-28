@@ -45,3 +45,9 @@ import LinkItem from '@/components/LinkItem.vue'
     </content-card>
   </div>
 </template>
+
+<style scoped>
+#app {
+  overflow-y: scroll;
+}
+</style>

@@ -6,11 +6,6 @@ import 'vue-sidebar-menu/dist/vue-sidebar-menu.css'
 
 const isCollapsed = ref(true)
 
-const onToggleCollapse = () => {
-  console.log('[ onToggleCollapse ]')
-  console.log('isCollapsed: ', isCollapsed.value)
-}
-
 const onItemClick = () => {
   // Collapse the side drawer (if it's open) on item click.
   if (!isCollapsed.value) {
@@ -77,12 +72,7 @@ const menu = [
 </script>
 
 <template>
-  <SidebarMenu
-    v-model:collapsed="isCollapsed"
-    :menu="menu"
-    @update:collapsed="onToggleCollapse"
-    @item-click="onItemClick"
-  >
+  <SidebarMenu v-model:collapsed="isCollapsed" :menu="menu" @item-click="onItemClick">
     <template v-slot:toggle-icon>
       <font-awesome-icon v-if="!isCollapsed" icon="fa-solid fa-circle-chevron-left" />
       <font-awesome-icon v-else icon="fa-solid fa-circle-chevron-right" />
