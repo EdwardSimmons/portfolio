@@ -50,7 +50,7 @@ import LinkItem from '@/components/LinkItem.vue'
         <template #title> Simulations of Heavy-ion Fusion using the TDHF Code "Sky3D" </template>
       </LinkItem>
       <h4>Awards:</h4>
-      <LinkItem href="/physics/janet-and-mark-preston-prize">
+      <LinkItem route="/physics/janet-and-mark-preston-prize">
         <template #icon>
           <font-awesome-icon icon="fa-solid fa-award" class="text-cv-dark-400 text-xl mr-2" />
         </template>
