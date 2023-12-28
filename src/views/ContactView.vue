@@ -39,18 +39,14 @@ const links: ContactLink[] = [
     <link-item
       v-for="(link, i) in links"
       :href="link.href"
+      :icon="link.icon"
       :key="i"
       :first="i === 0"
       :last="i === links.length - 1"
     >
-      <template #icon>
-        <font-awesome-icon :icon="link.icon" class="text-cv-dark-400 text-xl mr-2" />
-      </template>
-      <template #title>
-        <span class="underline">
-          {{ link.text }}
-        </span>
-      </template>
+      <span class="underline">
+        {{ link.text }}
+      </span>
     </link-item>
   </content-card>
 </template>

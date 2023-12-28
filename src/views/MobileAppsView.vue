@@ -50,12 +50,11 @@ const apps: AppLink[] = [
         :first="i === 0"
         :last="i === apps.length - 1"
       >
-        <template #icon>
+        <template #image>
           <mobile-app-icon :img="app.icon" class="mr-2" />
         </template>
-        <template #title>
-          <h3>{{ app.name }}</h3>
-        </template>
+
+        <h3>{{ app.name }}</h3>
       </link-item>
     </div>
   </content-card>
