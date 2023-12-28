@@ -1,9 +1,9 @@
-@import './base.css';
+@import './base.scss';
 @import './tailwind.css';
 
 #app {
   width: 100vw;
-  height: 100vh;
+  height: var(--unit-100vh);
   margin: 0 auto;
   padding: 2rem;
   padding-left: calc(65px + 2rem);

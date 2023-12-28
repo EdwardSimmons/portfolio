@@ -6,9 +6,16 @@
   font-weight: normal;
 }
 
+:root {
+  --unit-100vh: 100vh;
+  /* Handle 100vh on mobile using Dynamic View Height units */
+  @supports (height: 100dvh) {
+    --unit-100vh: 100dvh;
+  }
+}
+
 body {
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
+  min-height: var(--unit-100vh);
   transition:
     color 0.5s,
     background-color 0.5s;
@@ -19,8 +26,6 @@ body {
 }
 
 html {
-  height: 100%;
-  height: -webkit-fill-available;
   font-size: 12px;
 }
 
