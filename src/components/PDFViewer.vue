@@ -40,11 +40,9 @@ const convertRemToPixels = (rem: number) =>
 const props = defineProps<{
   path: string
   fileName: string
-  portrait?: boolean
 }>()
 
 const { pdf, pages } = usePDF(props.path)
-const isPortrait = props.portrait || false
 
 const state = reactive({
   isLoading: true,
@@ -94,13 +92,7 @@ const onClickDownload = () => {
       :class="state.isLoading ? 'loader' : 'loader finished'"
     />
     <div :class="state.isLoading ? 'pdf-container pdf-loading' : 'pdf-container pdf-loaded'">
-      <VuePDF
-        :pdf="pdf"
-        :page="state.page"
-        @loaded="onLoaded"
-        :width="pdfWidth"
-        :fit-parent="isPortrait"
-      />
+      <VuePDF :pdf="pdf" :page="state.page" @loaded="onLoaded" :width="pdfWidth" />
       <div class="mt-4">
         <font-awesome-icon
           icon="fa-solid fa-chevron-left"
