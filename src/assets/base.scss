@@ -7,6 +7,7 @@
 }
 
 :root {
+  --off-white: #f4f9f4;
   --unit-100vh: 100vh;
   /* Handle 100vh on mobile using Dynamic View Height units */
   @supports (height: 100dvh) {
@@ -15,6 +16,7 @@
 }
 
 body {
+  background-color: var(--off-white);
   min-height: var(--unit-100vh);
   transition:
     color 0.5s,
