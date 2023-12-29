@@ -17,7 +17,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <content-card>
+  <content-card class="mobile-app-info">
     <template #title>
       <mobile-app-icon :img="props.app.icon" />
     </template>
@@ -59,6 +59,10 @@ const props = defineProps<{
 }
 
 @media (orientation: landscape) {
+  .mobile-app-info {
+    width: 50vw;
+  }
+
   .links-contianer {
     flex-direction: row;
   }
