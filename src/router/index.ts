@@ -70,6 +70,11 @@ const router = createRouter({
       component: () => import('../views/SurfacingView.vue')
     },
     {
+      path: '/curriculum-vitae',
+      name: 'cv',
+      component: () => import('../views/CVView.vue')
+    },
+    {
       path: '/contact',
       name: 'contact',
       component: () => import('../views/ContactView.vue')

@@ -59,6 +59,16 @@ const menu = [
     }
   },
   {
+    href: '/curriculum-vitae',
+    title: 'Curriculum Vitae',
+    icon: {
+      element: 'font-awesome-icon',
+      attributes: {
+        icon: 'fa-solid fa-file'
+      }
+    }
+  },
+  {
     href: '/contact',
     title: 'Contact Me',
     icon: {
