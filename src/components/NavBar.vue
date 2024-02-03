@@ -104,6 +104,14 @@ const menu = [
   color: theme('colors.cv-dark.400');
 }
 
+.v-sidebar-menu .vsm--link_active {
+  color: #907ad6;
+}
+
+.v-sidebar-menu .vsm--link_level-1.vsm--link_active .vsm--icon {
+  background-color: transparent;
+}
+
 .v-sidebar-menu {
   background-color: theme('colors.cv-light.200');
 }
