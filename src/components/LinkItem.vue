@@ -17,8 +17,8 @@ const isShort = props.short || false
 const classes = computedEager(() => {
   return {
     link: true,
-    'my-4': true,
-    'w-full': true,
+    'tw-my-4': true,
+    'tw-w-full': true,
     'link-first': isFirst,
     'link-last': isLast
   }
@@ -29,15 +29,17 @@ const classes = computedEager(() => {
   <a v-if="!!props.href" :href="props.href" target="_blank">
     <div :class="classes">
       <slot name="image"></slot>
-      <div v-if="props.icon" class="w-6 mr-2 flex items-center">
-        <font-awesome-icon :icon="props.icon" class="text-cv-dark-400 text-xl mx-auto" />
+      <div v-if="props.icon" class="tw-w-6 tw-mr-2 tw-flex tw-items-center">
+        <font-awesome-icon :icon="props.icon" class="tw-text-cv-dark-400 tw-text-xl tw-mx-auto" />
       </div>
-      <div class="flex justify-between items-center grow py-2 pl-2 rounded-md link-hover">
+      <div
+        class="tw-flex tw-justify-between tw-items-center tw-grow tw-py-2 tw-pl-2 tw-rounded-md link-hover"
+      >
         <slot></slot>
         <font-awesome-icon
           v-if="!isShort"
           icon="fa-solid fa-chevron-right"
-          class="text-cv-dark-400 mx-2"
+          class="tw-text-cv-dark-400 tw-mx-2"
         />
       </div>
     </div>
@@ -46,15 +48,17 @@ const classes = computedEager(() => {
   <router-link v-if="!!props.route" :to="props.route">
     <div :class="classes">
       <slot name="image"></slot>
-      <div v-if="props.icon" class="w-6 mr-2 flex items-center">
-        <font-awesome-icon :icon="props.icon" class="text-cv-dark-400 text-xl mx-auto" />
+      <div v-if="props.icon" class="tw-w-6 tw-mr-2 tw-flex tw-items-center">
+        <font-awesome-icon :icon="props.icon" class="tw-text-cv-dark-400 tw-text-xl tw-mx-auto" />
       </div>
-      <div class="flex justify-between items-center grow py-2 pl-2 rounded-md link-hover">
+      <div
+        class="tw-flex tw-justify-between tw-items-center tw-grow tw-py-2 tw-pl-2 tw-rounded-md link-hover"
+      >
         <slot></slot>
         <font-awesome-icon
           v-if="!isShort"
           icon="fa-solid fa-chevron-right"
-          class="text-cv-dark-400 mx-2"
+          class="tw-text-cv-dark-400 tw-mx-2"
         />
       </div>
     </div>

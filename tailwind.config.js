@@ -3,6 +3,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 export default {
   content: ['./public/**/*.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   presets: [],
+  prefix: 'tw-',
   darkMode: 'media', // or 'class'
   theme: {
     accentColor: ({ theme }) => ({

@@ -87,7 +87,7 @@ const onClickDownload = () => {
 </script>
 
 <template>
-  <div class="relative">
+  <div class="tw-relative">
     <pixel-spinner
       :animation-duration="2000"
       :size="70"
@@ -102,22 +102,22 @@ const onClickDownload = () => {
         :width="pdfWidth"
         :fit-parent="pdfIsPortrait && windowIsLandscape"
       />
-      <div class="mt-4">
+      <div class="tw-mt-4">
         <font-awesome-icon
           icon="fa-solid fa-chevron-left"
-          class="pdf-arrow pr-4"
+          class="pdf-arrow tw-pr-4"
           @click="onClickControl('prev')"
         />
         <span>{{ `Page: ${state.page} / ${pages}` }}</span>
         <font-awesome-icon
           icon="fa-solid fa-chevron-right"
-          class="pdf-arrow pl-4"
+          class="pdf-arrow tw-pl-4"
           @click="onClickControl('next')"
         />
       </div>
       <font-awesome-icon
         icon="fa-solid fa-file-download"
-        class="pdf-arrow text-xl absolute bottom-0 right-0 text-cv-dark-400"
+        class="pdf-arrow tw-text-xl tw-absolute tw-bottom-0 tw-right-0 tw-text-cv-dark-400"
         @click="onClickDownload"
         title="Download this pdf"
       />

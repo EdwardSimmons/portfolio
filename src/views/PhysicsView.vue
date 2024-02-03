@@ -3,12 +3,12 @@ import LinkItem from '@/components/LinkItem.vue'
 </script>
 
 <template>
-  <div class="flex flex-col self-baseline">
-    <content-card class="mb-8">
+  <div class="tw-flex tw-flex-col tw-self-baseline">
+    <content-card class="tw-mb-8">
       <template #title>
         <h2>Physics</h2>
       </template>
-      <h3 class="mb-2">MSc Fusion Energy</h3>
+      <h3 class="tw-mb-2">MSc Fusion Energy</h3>
       <h4>Dissertation:</h4>
       <LinkItem icon="fa-solid fa-graduation-cap" route="/physics/msc-dissertation">
         Testing a New Theory for Small Plasma Eruptions in Tokamaks Using Gyrofluid Simulations
@@ -25,7 +25,7 @@ import LinkItem from '@/components/LinkItem.vue'
       </LinkItem>
     </content-card>
     <content-card>
-      <h3 class="mb-2">BSc Physics with Nuclear Astrophysics</h3>
+      <h3 class="tw-mb-2">BSc Physics with Nuclear Astrophysics</h3>
       <h4>Dissertation:</h4>
       <LinkItem icon="fa-solid fa-graduation-cap" route="/physics/bsc-dissertation">
         Simulations of Heavy-ion Fusion using the TDHF Code "Sky3D"

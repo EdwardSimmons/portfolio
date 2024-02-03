@@ -3,10 +3,7 @@
 
 #app {
   width: 100vw;
-  height: var(--unit-100vh);
   margin: 0 auto;
-  padding: 2rem;
-  padding-left: calc(65px + 2rem);
   font-weight: normal;
   display: flex;
   align-items: center;

@@ -1,7 +1,7 @@
 <template>
   <content-card>
     <template #title>
-      <h3 class="text-cv-dark-400">Physics: MSc Project Poster</h3>
+      <h3 class="tw-text-cv-dark-400">Physics: MSc Project Poster</h3>
     </template>
     <img class="poster" src="@/assets/msc_poster.jpg" alt="poster-image" />
   </content-card>

@@ -15,7 +15,7 @@ const links: ContactLink[] = [
   },
   {
     icon: 'fa-solid fa-envelope',
-    text: 'e.d.simmons@outlook.com',
+    text: 'Email',
     href: 'mailto:e.d.simmons@outlook.com'
   },
   {
@@ -44,7 +44,7 @@ const links: ContactLink[] = [
       :first="i === 0"
       :last="i === links.length - 1"
     >
-      <span class="underline">
+      <span class="tw-underline">
         {{ link.text }}
       </span>
     </link-item>

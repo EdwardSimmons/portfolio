@@ -3,7 +3,7 @@
 <template>
   <content-card>
     <template #title>
-      <h3 class="text-cv-dark-400">Physics: Janet and Mark Preston Prize</h3>
+      <h3 class="tw-text-cv-dark-400">Physics: Janet and Mark Preston Prize</h3>
     </template>
     <img class="award" src="@/assets/bsc_award.jpeg" alt="certificate-image" />
   </content-card>

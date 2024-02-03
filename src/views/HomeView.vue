@@ -5,7 +5,7 @@ import AvatarCircle from '@/components/AvatarCircle.vue'
 <template>
   <content-card class="home">
     <template #title> <avatar-circle /> </template>
-    <h3 class="text-cv-dark-400 text-2xl">Hello!</h3>
+    <h3 class="tw-text-cv-dark-400 tw-text-2xl">Hello!</h3>
     Welcome to my personal web portfolio! My name is Ed Simmons, and I hope you enjoy perusing this
     site as much as I enjoyed making it. Please use the links in the side-drawer to find out more
     about my career.
