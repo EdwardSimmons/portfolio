@@ -91,58 +91,45 @@ const menu = [
 </template>
 
 <style>
-.v-sidebar-menu .vsm--header {
-  color: black;
-}
-
-.v-sidebar-menu .vsm--link {
-  color: black;
-}
-
-.v-sidebar-menu .vsm--link_level-1 .vsm--icon {
-  background-color: transparent;
-  color: theme('colors.cv-dark.400');
-}
-
-.v-sidebar-menu .vsm--link_active {
-  color: #907ad6;
-}
-
-.v-sidebar-menu .vsm--link_level-1.vsm--link_active .vsm--icon {
-  background-color: transparent;
-}
-
 .v-sidebar-menu {
-  background-color: theme('colors.cv-light.200');
+  --vsm-primary-color: #4285f4;
+  --vsm-base-bg: theme('colors.cv-light.200');
+  --vsm-item-color: theme('colors.cv-dark.400');
+  /* --vsm-item-active-color:; */
+  --vsm-item-active-bg: rgba(255, 255, 255, 0.5);
+  /* --vsm-item-active-line-color:; */
+  --vsm-item-open-color: #fff;
+  /* --vsm-item-hover-color:; */
+  --vsm-item-open-bg: theme('colors.cv-dark.400');
+  --vsm-item-hover-bg: rgba(255, 255, 255, 0.5);
+  --vsm-icon-color: var(--vsm-item-color);
+  --vsm-icon-bg: transparent;
+  --vsm-icon-active-color: #907ad6;
+  /* --vsm-icon-active-bg:; */
+  /* --vsm-icon-open-color:; */
+  /* --vsm-icon-open-bg:; */
+  --vsm-mobile-item-color: #fff;
+  --vsm-mobile-item-bg: theme('colors.cv-dark.400');
+  --vsm-mobile-icon-color: #fff;
+  --vsm-mobile-icon-bg: transparent;
+  /* --vsm-dropdown-bg: #36363b; */
+  /* --vsm-header-item-color: rgba(255, 255, 255, 0.7); */
+  --vsm-toggle-btn-color: #fff;
+  --vsm-toggle-btn-bg: theme('colors.cv-dark.400');
+  --vsm-item-font-size: 1rem;
+  --vsm-item-line-height: 2rem;
+  --vsm-item-padding: 1rem;
+  --vsm-icon-height: 2rem;
+  --vsm-icon-width: 2rem;
 }
 
-.v-sidebar-menu .vsm--link_hover {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-.v-sidebar-menu .vsm--badge_default,
-.v-sidebar-menu .vsm--toggle-btn {
-  background-color: theme('colors.cv-dark.400');
-}
-
+/* No selector available for toggle button size */
 .v-sidebar-menu .vsm--toggle-btn {
   font-size: 2rem;
 }
 
-.v-sidebar-menu .vsm--mobile-bg {
-  background-color: theme('colors.cv-dark.400');
-  color: white;
-}
-
-.v-sidebar-menu .vsm--link_mobile {
-  color: white;
-}
-
-.v-sidebar-menu.vsm_collapsed .vsm--link_level-1.vsm--link_hover .vsm--icon {
-  background-color: transparent;
-}
-
+/* Overwrite classes to set line width */
 .v-sidebar-menu .vsm--link_level-1.vsm--link_active {
-  box-shadow: 5px 0px 0px 0px #907ad6 inset;
+  box-shadow: 4px 0px 0px 0px #907ad6 inset;
 }
 </style>
