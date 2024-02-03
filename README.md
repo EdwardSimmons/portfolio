@@ -2,7 +2,7 @@
 
 Welcome to the repo for my personal web/ development/ career portfolio!
 
-The project uses [Vue3](https://vuejs.org/), and is set up with [tailwindcss](https://tailwindcss.com/) and [fontawesome](https://fontawesome.com/icons?d=gallery).
+The project uses [Vue3](https://vuejs.org/), and is set up with [vuetify](https://vuetifyjs.com/en/), [tailwindcss](https://tailwindcss.com/) and [fontawesome](https://fontawesome.com/icons?d=gallery).
 
 ## Project Setup
 
