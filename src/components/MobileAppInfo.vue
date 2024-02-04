@@ -17,7 +17,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <content-card class="mobile-app-info">
+  <content-card back class="mobile-app-info">
     <template #title>
       <mobile-app-icon :img="props.app.icon" />
     </template>

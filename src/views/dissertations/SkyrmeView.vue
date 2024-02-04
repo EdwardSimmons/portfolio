@@ -3,7 +3,7 @@ import PDFViewer from '@/components/PDFViewer.vue'
 </script>
 
 <template>
-  <content-card>
+  <content-card back>
     <template #title>
       <h3 class="tw-text-cv-dark-400">Physics: BSc Dissertation</h3>
     </template>

@@ -1,5 +1,5 @@
 <template>
-  <content-card>
+  <content-card back>
     <template #title>
       <h3 class="tw-text-cv-dark-400">Physics: MSc Project Poster</h3>
     </template>
@@ -10,7 +10,7 @@
 <style scoped>
 @media (orientation: landscape) {
   .poster {
-    height: calc(100vh - 8rem);
+    height: calc(100vh - 12rem);
   }
 }
 </style>
