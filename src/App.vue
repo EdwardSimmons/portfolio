@@ -26,7 +26,7 @@ import NavBar from '@/components/NavBar.vue'
 
 @media (orientation: portrait) {
   .mobile-padding {
-    padding: 0 2rem;
+    padding: 2rem 1rem;
   }
 }
 </style>
