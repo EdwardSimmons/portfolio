@@ -63,8 +63,8 @@ const cvLink = 'https://pdfhost.io/v/WipTFIj~J_Edward_SimmonsCV'
           base-color="primary"
           color="#907ad6"
           title="Surface Design Engineering"
-          value="surfacing"
           :href="surfLink"
+          target="_blank"
         >
           <template v-slot:prepend>
             <font-awesome-icon icon="fa-solid fa-car-side" class="v-icon v-icon--size-default" />
@@ -74,8 +74,8 @@ const cvLink = 'https://pdfhost.io/v/WipTFIj~J_Edward_SimmonsCV'
           base-color="primary"
           color="#907ad6"
           title="Curriculum Vitae"
-          value="cv"
           :href="cvLink"
+          target="_blank"
         >
           <template v-slot:prepend>
             <font-awesome-icon icon="fa-solid fa-file" class="v-icon v-icon--size-default" />
