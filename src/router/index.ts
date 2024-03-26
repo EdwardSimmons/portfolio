@@ -15,24 +15,9 @@ const router = createRouter({
       component: () => import('../views/PhysicsView.vue')
     },
     {
-      path: '/physics/bsc-dissertation',
-      name: 'physics-bsc-dissertation',
-      component: () => import('../views/dissertations/SkyrmeView.vue')
-    },
-    {
       path: '/physics/janet-and-mark-preston-prize',
       name: 'janet-and-mark-preston-prize',
-      component: () => import('../views/dissertations/JanetView.vue')
-    },
-    {
-      path: '/physics/msc-dissertation',
-      name: 'physics-msc-dissertation',
-      component: () => import('../views/dissertations/GyrofluidView.vue')
-    },
-    {
-      path: '/physics/msc-poster',
-      name: 'physics-msc-poster',
-      component: () => import('../views/dissertations/PosterView.vue')
+      component: () => import('../views/JanetView.vue')
     },
     {
       path: '/mobile-apps',
@@ -63,16 +48,6 @@ const router = createRouter({
       path: '/mobile-apps/memoria',
       name: 'mobile-apps-memoria',
       component: () => import('../views/apps/MemoriaView.vue')
-    },
-    {
-      path: '/surfacing',
-      name: 'surfacing',
-      component: () => import('../views/SurfacingView.vue')
-    },
-    {
-      path: '/curriculum-vitae',
-      name: 'cv',
-      component: () => import('../views/CVView.vue')
     },
     {
       path: '/contact',
