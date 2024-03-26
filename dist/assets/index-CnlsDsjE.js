@@ -1,1 +1,0 @@
-import{s as r,k as s,l as c}from"./index-Z8yeAgIF.js";function n(o,l){var e;const a=r();return s(()=>{a.value=o()},{...l,flush:(e=l==null?void 0:l.flush)!=null?e:"sync"}),c(a)}typeof WorkerGlobalScope<"u"&&globalThis instanceof WorkerGlobalScope;export{n as c};
