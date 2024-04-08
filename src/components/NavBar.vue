@@ -12,8 +12,8 @@ const rounded = ref(isMobile ? 'lg' : 0)
 const surfLink = 'https://pdfhost.io/v/cbT.Z35Cr_Edward_Simmons_Surfacing_Portfolio'
 
 // CV - Edit Link
-// https://pdfhost.io/edit?doc=30de098e-eaec-4599-a6a9-69089c7b1a8d
-const cvLink = 'https://pdfhost.io/v/WipTFIj~J_Edward_SimmonsCV'
+// https://pdfhost.io/edit?doc=e8eda18f-784e-4909-ba3c-9ecb972cc103
+const cvLink = 'https://pdfhost.io/v/dTDrw8OOP_Edward_SimmonsCV'
 </script>
 
 <template>
