@@ -73,6 +73,17 @@ const cvLink = 'https://pdfhost.io/v/dTDrw8OOP_Edward_SimmonsCV'
         <v-list-item
           base-color="primary"
           color="#907ad6"
+          title="Pokémon Project"
+          href="https://edwardsimmons.github.io/pokemon-sv-isolated-encounters"
+          target="_blank"
+        >
+          <template v-slot:prepend>
+            <font-awesome-icon icon="fa-solid fa-dragon" class="v-icon v-icon--size-default" />
+          </template>
+        </v-list-item>
+        <v-list-item
+          base-color="primary"
+          color="#907ad6"
           title="Curriculum Vitae"
           :href="cvLink"
           target="_blank"

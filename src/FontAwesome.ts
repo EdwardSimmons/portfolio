@@ -19,7 +19,8 @@ import {
   faFile,
   faEnvelope,
   faArrowLeft,
-  faBars
+  faBars,
+  faDragon
 } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
@@ -44,7 +45,8 @@ library.add(
   faFile,
   faEnvelope,
   faArrowLeft,
-  faBars
+  faBars,
+  faDragon
 )
 
 export default FontAwesomeIcon
