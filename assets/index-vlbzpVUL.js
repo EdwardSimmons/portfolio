@@ -1,0 +1,1 @@
+import{K as r,a7 as c,a8 as f}from"./index-lMY0UKO6.js";function s(o,a){var e;const l=r();return c(()=>{l.value=o()},{...a,flush:(e=a==null?void 0:a.flush)!=null?e:"sync"}),f(l)}typeof WorkerGlobalScope<"u"&&globalThis instanceof WorkerGlobalScope;export{s as c};
