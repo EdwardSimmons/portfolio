@@ -9,11 +9,14 @@ const rounded = ref(isMobile ? 'lg' : 0)
 
 // Surfacing Portfolio - Edit link
 // https://pdfhost.io/edit?doc=c5e969c4-960e-4726-a1a5-7cb33b5fb33d
-const surfLink = 'https://pdfhost.io/v/cbT.Z35Cr_Edward_Simmons_Surfacing_Portfolio'
+// const surfLink = 'https://pdfhost.io/v/cbT.Z35Cr_Edward_Simmons_Surfacing_Portfolio'
+const surfLink =
+  'https://drive.google.com/file/d/117Rth24HJ_2CoFY_BauEI6MOasxuErMR/view?usp=sharing'
 
 // CV - Edit Link
 // https://pdfhost.io/edit?doc=e8eda18f-784e-4909-ba3c-9ecb972cc103
-const cvLink = 'https://pdfhost.io/v/dTDrw8OOP_Edward_SimmonsCV'
+// const cvLink = 'https://pdfhost.io/v/dTDrw8OOP_Edward_SimmonsCV'
+const cvLink = 'https://drive.google.com/file/d/1JboZ2Kk70GBp-MC93kgQvq3m9GEZX625/view?usp=sharing'
 </script>
 
 <template>
