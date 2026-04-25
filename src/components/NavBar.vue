@@ -16,7 +16,7 @@ const surfLink =
 // CV - Edit Link
 // https://pdfhost.io/edit?doc=e8eda18f-784e-4909-ba3c-9ecb972cc103
 // const cvLink = 'https://pdfhost.io/v/dTDrw8OOP_Edward_SimmonsCV'
-const cvLink = 'https://drive.google.com/file/d/1JboZ2Kk70GBp-MC93kgQvq3m9GEZX625/view?usp=sharing'
+const cvLink = 'https://drive.google.com/file/d/156SZmfTwz0Oq5DKy35VTlbv4VRqL_s70/view?usp=sharing'
 </script>
 
 <template>

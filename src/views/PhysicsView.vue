@@ -21,13 +21,13 @@ import LinkItem from '@/components/LinkItem.vue'
       <h4>Dissertation:</h4>
       <LinkItem
         icon="fa-solid fa-graduation-cap"
-        href="https://pdfhost.io/v/C.zNQMpX5_MSc_Fusion_Energy_Dissertation"
+        href="https://drive.google.com/file/d/1h5SrTDzuYfHnKZw8Qv9rIsDM-nRamJLD/view?usp=sharing"
       >
         Testing a New Theory for Small Plasma Eruptions in Tokamaks Using Gyrofluid Simulations
       </LinkItem>
       <LinkItem
         icon="fa-solid fa-file-image"
-        href="https://pdfhost.io/v/ZapNvi.2u_Edward_Simmons_MSc_Project_Poster"
+        href="https://drive.google.com/file/d/1w6YQAOXAOiuIg58vcpmq_DwgWvtUDqJ_/view?usp=sharing"
       >
         Project Poster
       </LinkItem>
@@ -44,7 +44,7 @@ import LinkItem from '@/components/LinkItem.vue'
       <h4>Dissertation:</h4>
       <LinkItem
         icon="fa-solid fa-graduation-cap"
-        href="https://pdfhost.io/v/iRFtjh5uk_BSc_Dissertation"
+        href="https://drive.google.com/file/d/1Kt5AR92cziUbnpNs7bCYyivLtQhed4Y2/view?usp=sharing"
       >
         Simulations of Heavy-ion Fusion using the TDHF Code "Sky3D"
       </LinkItem>
